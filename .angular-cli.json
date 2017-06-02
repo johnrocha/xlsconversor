@@ -1,0 +1,84 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "taximanager"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../src/assets/css/bootstrap.min.css",
+        "../src/assets/css/demo.css",
+        "../src/assets/css/material-dashboard.css",
+        "../src/assets/css/font-awesome.min.css",
+        "../src/assets/css/material_icons.css"
+      ],
+      "scripts": [
+        "../src/assets/js/core/jquery-3.1.1.min.js",
+        "../src/assets/js/core/jquery-ui.min.js",
+        "../src/assets/js/core/bootstrap.min.js",
+        "../src/assets/js/core/arrive.js",
+        "../src/assets/js/core/material.min.js",
+        "../src/assets/js/core/perfect-scrollbar.jquery.min.js",
+        "../src/assets/js/core/jquery.validate.min.js",
+        "../src/assets/js/plugins/moment.min.js",
+        "../src/assets/js/plugins/jquery.bootstrap-wizard.js",
+        "../src/assets/js/plugins/bootstrap-notify.js",
+        "../src/assets/js/plugins/bootstrap-datetimepicker.js",
+        "../src/assets/js/plugins/jquery-jvectormap.js",
+        "../src/assets/js/plugins/nouislider.min.js",
+        "../src/assets/js/plugins/jquery.select-bootstrap.js",
+        "../src/assets/js/plugins/jquery.datatables.js",
+        "../src/assets/js/plugins/sweetalert2.min.js",
+        "../src/assets/js/plugins/jasny-bootstrap.min.js",
+        "../src/assets/js/plugins/fullcalendar.min.js",
+        "../src/assets/js/plugins/jquery.tagsinput.js",
+        "../src/assets/js/material-dashboard-angular.js",
+        "../src/assets/js/demo.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

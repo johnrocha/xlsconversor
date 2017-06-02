@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <style>
+  .align-middle {
+    margin-top: 10%;
+    margin-bottom: 25%;
+  }
+  </style>
+
+    <div class="container-fluid align-middle" filter-color="black" style="background-color: #fcdc0a;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center;">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4" style="margin-top: 40px; margin-bottom: 40px">
+                            <img src="./assets/img/logos/icone_login.png" style="width: 100%;">
+                            <form name="form" (ngSubmit)="login()" novalidate>
+
+                                <div class="card card-login card-hidden">
+                                    <div style="width: 100%; text-align: center; margin-top: 15px;">Login para entrar no sistema.</div>
+                                    <div class="card-content" style="margin-top: 5px;">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Usuário</label>
+                                                <input type="text" class="form-control" [(ngModel)]="user.user" name="user">
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Senha</label>
+                                                <input type="password" class="form-control" [(ngModel)]="user.password" name="password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer text-center">
+                                        <button type="submit" class="btn btn-wd" style="background-color: black;">Entrar</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
